@@ -5,13 +5,17 @@ import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled3 = ({
   navigation
 }) => {
+  const Login = useSelector(state => state.Login);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Pressable onPress={() => navigation.navigate("Untitled2", {})}><View style={styles.HzhxDFZk}></View></Pressable></ScrollView>
+    }}><Pressable onPress={() => navigation.navigate("Untitled2", {
+        "hola": "hola",
+        "test": Login.test
+      })}><View style={styles.HzhxDFZk}></View></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
