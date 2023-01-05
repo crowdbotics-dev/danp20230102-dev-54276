@@ -12,8 +12,8 @@ const Untitled3 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Pressable onPress={() => navigation.navigate("Untitled2", {
-        "hola": "hola",
+    }}><Pressable onPress={() => navigation.navigation.navigate("Untitled2", {
+        "saludo": "hola",
         "test": Login.test
       })}><View style={styles.HzhxDFZk}></View></Pressable></ScrollView>
     </SafeAreaView>;
