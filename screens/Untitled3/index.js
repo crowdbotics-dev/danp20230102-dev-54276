@@ -8,7 +8,7 @@ const Untitled3 = ({
   const Test = useSelector(state => state.Test);
   const hola = useSelector(state => state.hola);
   const Login = useSelector(state => state.Login);
-  return <SafeAreaView style={styles.safeArea}>
+  return <SafeAreaView style={styles.safeArea} onPress={() => navigation.navigation.navigate("undefined", {})}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
@@ -19,7 +19,7 @@ const Untitled3 = ({
         "test": Login.test,
         "chau": hola.chau,
         "testttt": Test.testttt,
-        "hi": "hello"
+        "a": "hello"
       })}><View style={styles.HzhxDFZk}></View></Pressable></ScrollView>
     </SafeAreaView>;
 };
